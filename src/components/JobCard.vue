@@ -1,12 +1,12 @@
 <template>
     <div class="job-container">
-        <header>Job ID: {{ jobId }}</header>
+        <header>Job ID: {{ jobCardData.jobId }}</header>
         <div class="">
-            <h3>Item SKU: {{ productSKU }}</h3>
+            <h3>Item SKU: {{ jobCardData.product.skuNumber }}</h3>
         </div>
         <div class="repair-data">
-            <p>Repair Code: {{ repairCode }}</p>
-            <p>Repair Time: {{ allotedRepairTime }}</p>
+            <p>Repair Code: {{ jobCardData.repair.code }}</p>
+            <p>Repair Time: {{ jobCardData.repair.allottedRepairTime }}</p>
         </div>
         
     </div>
@@ -15,8 +15,12 @@
 <script setup lang="ts">
 import type { JobCardData } from '@/types';
 
+interface Props{
+    jobCardData: JobCardData
+}
 
-const props = defineProps<JobCardData>();
+
+const props = defineProps<Props>();
 
 
 

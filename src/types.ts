@@ -13,6 +13,9 @@ export interface Job {
     repairStatus: RepairStatus
 }
 
+export type JobCardData = Pick<Job,"jobId" | "product" | "repair">
+
+
 export interface Product {
     skuNumber: string,
     description: string,
@@ -25,3 +28,4 @@ export interface RepairCode{
     description: string,
     allottedRepairTime: number
 }
+

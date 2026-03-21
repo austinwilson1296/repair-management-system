@@ -1,23 +1,30 @@
 <template>
     <div class="sidebar">
-    <JobCard 
-        :job-id="data.jobId" 
-        :product-s-k-u="data.productSKU"
-        :repair-code="data.repairCode"
-        :alloted-repair-time="data.allotedRepairTime"/>
+    <JobCard :job-card-data="jobData"/>
     </div>
 </template>
 
 <script setup lang="ts">
 
-import type { JobCardData } from '../types';
+import type { JobCardData,RepairCode,Product } from '../types';
 import JobCard from './JobCard.vue'
 
-const data: JobCardData = {
+const repairData: RepairCode = {
+    code: "SS",
+    description: "Surface Scratch",
+    allottedRepairTime: 30
+}
+
+const productData: Product = {
+    skuNumber: "B631-31",
+    description: "A really nice dresser.",
+    type: "Case-Good"
+}
+
+const jobData: JobCardData = {
   jobId: 1,
-  productSKU: 'B697-31',
-  repairCode: 'SS',
-  allotedRepairTime: 20
+  product: productData,
+  repair: repairData
 }
 </script>
 
