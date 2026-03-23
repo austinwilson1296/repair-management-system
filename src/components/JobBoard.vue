@@ -1,6 +1,8 @@
 <template>
     <div class="sidebar">
-    <JobCard :job-card-data="jobData"/>
+        <JobCard :job-card-data="jobData" />
+        <JobCard :job-card-data="jobData" />
+        <JobCard :job-card-data="jobData" />
     </div>
 </template>
 
@@ -30,10 +32,14 @@ const jobData: JobCardData = {
 
 <style scoped>
 .sidebar {
-  background: #ffffff;
+  background: #433A3F;
   box-shadow: 4px 0 24px rgba(0, 0, 0, 0.05);
   padding: 1.5rem;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  ;
+  
 }
 
 .sidebar a {

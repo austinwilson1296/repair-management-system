@@ -10,7 +10,8 @@ export interface Job {
     assignedTechnician: string,
     startTime: Date,
     endTime: Date,
-    repairStatus: RepairStatus
+    repairStatus: RepairStatus,
+    repairImageURLs: string[]
 }
 
 export type JobCardData = Pick<Job,"jobId" | "product" | "repair">

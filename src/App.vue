@@ -10,10 +10,12 @@
 
 </template>
 <script setup lang="ts">
+import './assets/main.css';
 import JobBoard from './components/JobBoard.vue';
 
 </script>
 <style scoped>
+
 .main-container{
   margin: 0;
   display: flex;
@@ -27,7 +29,7 @@ import JobBoard from './components/JobBoard.vue';
 }
 
 .job-board{
-  flex:1 1 1;
+  flex: 1 1 1;
 
 }
 </style>

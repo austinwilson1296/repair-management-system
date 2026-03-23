@@ -29,6 +29,7 @@ const props = defineProps<Props>();
 <style scoped>
 
 .job-container{
+    background: white;
     border-radius: 30px;
     border: solid;
     display: grid;
@@ -37,7 +38,8 @@ const props = defineProps<Props>();
     width: 200px;
     height: 150px;
     box-shadow: 0 0 0 2.5px#D9D9D9;
-    margin: 10px;
+    margin: 10px
+    
     
 }
 header{
@@ -46,7 +48,7 @@ header{
 .repair-data{
     display: flex;
     justify-content: space-around;
-    margin: 10px;
+    
 }
 
 </style>
