@@ -1,7 +1,7 @@
 <template>
 <div class="main-container">
 <main class="main-area">
-  <div>This is the main Area</div>  
+  <JobWorkArea />
 </main>
 <div class="job-board">
   <JobBoard />
@@ -12,6 +12,7 @@
 <script setup lang="ts">
 import './assets/main.css';
 import JobBoard from './components/JobBoard.vue';
+import JobWorkArea from './components/JobWorkArea.vue';
 
 </script>
 <style scoped>

@@ -37,7 +37,7 @@ const props = defineProps<Props>();
     padding: 20px;
     width: 200px;
     height: 150px;
-    box-shadow: 0 0 0 2.5px#D9D9D9;
+    box-shadow: 2px 2px 2px #DEA47E;
     margin: 10px
     
     

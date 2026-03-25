@@ -1,5 +1,5 @@
 export type furnitureType = "Upholstery" | "Case-Good"
-export type RepairStatus = "In Queue" | "Started" | "Finished"
+export type RepairStatus = "In Queue" | "Started" | "Finished" | "ReWork"
 
 
 
