@@ -1,5 +1,5 @@
 <template>
-    <div class="job-container">
+    <div class="job-container"  @click="store.setJob(jobData)">
         <header>Job ID: {{ jobData.jobId }}</header>
         <div class="">
             <h3>Item SKU: {{ jobData.product.skuNumber }}</h3>
@@ -15,6 +15,7 @@
 <script setup lang="ts">
 import type { Job } from '@/types';
 import { useJobStore } from '@/stores/job';
+
 
 interface Props{
     jobData: Job

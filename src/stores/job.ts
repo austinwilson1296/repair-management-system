@@ -9,6 +9,7 @@ export const useJobStore = defineStore('job', ()=>{
 
     function setJob(job: Job) {
        storedJob.value = job
+       console.log("Job added to store!")
 
     }
 

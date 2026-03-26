@@ -8,8 +8,8 @@ export interface Job {
     product: Product,
     repair: RepairCode,
     assignedTechnician: string,
-    startTime: Date,
-    endTime: Date,
+    startTime: Date | null,
+    endTime: Date | null,
     repairStatus: RepairStatus,
     repairImageURLs: string[]
 }
