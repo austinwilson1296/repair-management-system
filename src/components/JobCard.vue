@@ -1,26 +1,30 @@
 <template>
     <div class="job-container">
-        <header>Job ID: {{ jobCardData.jobId }}</header>
+        <header>Job ID: {{ jobData.jobId }}</header>
         <div class="">
-            <h3>Item SKU: {{ jobCardData.product.skuNumber }}</h3>
+            <h3>Item SKU: {{ jobData.product.skuNumber }}</h3>
         </div>
         <div class="repair-data">
-            <p>Repair Code: {{ jobCardData.repair.code }}</p>
-            <p>Repair Time: {{ jobCardData.repair.allottedRepairTime }}</p>
+            <p>Repair Code: {{ jobData.repair.code }}</p>
+            <p>Repair Time: {{ jobData.repair.allottedRepairTime }}</p>
         </div>
         
     </div>
 </template>
 
 <script setup lang="ts">
-import type { JobCardData } from '@/types';
+import type { Job } from '@/types';
+import { useJobStore } from '@/stores/job';
 
 interface Props{
-    jobCardData: JobCardData
+    jobData: Job
 }
 
-
 const props = defineProps<Props>();
+
+const store = useJobStore()
+
+
 
 
 
