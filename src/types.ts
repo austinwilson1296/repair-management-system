@@ -11,7 +11,9 @@ export interface Job {
     startTime: Date | null,
     endTime: Date | null,
     repairStatus: RepairStatus,
-    repairImageURLs: string[]
+    repairImageURLs: string[],
+    repairNotes: string,
+    damagePhoto: string
 }
 
 export type JobCardData = Pick<Job,"jobId" | "product" | "repair">

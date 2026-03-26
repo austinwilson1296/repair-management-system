@@ -41,7 +41,9 @@ export const job1: Job = {
     startTime: null,
     endTime: null,
     repairStatus: "In Queue",
-    repairImageURLs: []
+    repairImageURLs: [],
+    repairNotes: "Deep gouge on the top of the dresser",
+    damagePhoto: "/dresser.jpeg"
 }
 export const job2: Job = {
     jobId: 2,
@@ -51,7 +53,9 @@ export const job2: Job = {
     startTime: null,
     endTime: null,
     repairStatus: "In Queue",
-    repairImageURLs: []
+    repairImageURLs: [],
+    repairNotes: "Corner Crushed on the side of the tv stand",
+    damagePhoto: "/tv_stand.jpeg"
 }
 export const job3: Job = {
     jobId: 3,
@@ -61,7 +65,9 @@ export const job3: Job = {
     startTime: null,
     endTime: null,
     repairStatus: "In Queue",
-    repairImageURLs: []
+    repairImageURLs: [],
+    repairNotes: "hole in the back of sofa",
+    damagePhoto: "/sofa.jpeg"
 }
 
 export const repairJobs: Job[] = [job1,job2,job3]
